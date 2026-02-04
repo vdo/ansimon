@@ -5,6 +5,8 @@ A TUI monitor compatible with Ansible inventories. Connects to hosts via SSH in 
 ![Rust](https://img.shields.io/badge/rust-stable-orange)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+![Ansimon Screenshot](assets/shot.png)
+
 ## ✨ Features
 
 - 📋 **Ansible inventory compatible** — reads INI and YAML inventory files
