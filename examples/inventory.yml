@@ -1,0 +1,31 @@
+all:
+  children:
+    web:
+      hosts:
+        web01:
+          ansible_host: 192.168.1.1
+        web02:
+          ansible_host: 192.168.1.2
+        web03:
+          ansible_host: 192.168.1.3
+      vars:
+        ansible_user: deploy
+    db:
+      hosts:
+        db01:
+          ansible_host: 192.168.1.10
+          ansible_port: 2222
+        db02:
+          ansible_host: 192.168.1.11
+      vars:
+        ansible_user: postgres
+    cache:
+      hosts:
+        cache01:
+          ansible_host: 192.168.1.20
+    monitoring:
+      hosts:
+        prometheus01:
+          ansible_host: 192.168.1.30
+        grafana01:
+          ansible_host: 192.168.1.31

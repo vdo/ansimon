@@ -1,0 +1,15 @@
+[package]
+name = "ansimon"
+version = "0.1.0"
+edition = "2021"
+description = "TUI monitor compatible with Ansible inventories"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+anyhow = "1"
+glob-match = "0.2"
